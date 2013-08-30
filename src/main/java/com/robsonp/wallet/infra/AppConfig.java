@@ -33,7 +33,7 @@ public class AppConfig {
     @Bean
     public MongoFactoryBean mongo() {
         String sPort = System.getenv("OPENSHIFT_MONGODB_DB_PORT");
-        String host = System.getenv("OPENSHIFT_MONGODB_DB_PORT");
+        String host = System.getenv("OPENSHIFT_MONGODB_DB_HOST");
         
         int port = 27017;
         if(sPort != null)
